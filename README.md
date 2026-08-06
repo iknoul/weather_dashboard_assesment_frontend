@@ -1,16 +1,28 @@
-# React + Vite
+# Weather Dashboard Assessment (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather dashboard frontend application built with Vite and React. It fetches and displays real-time weather information by connecting to a local backend API.
 
-Currently, two official plugins are available:
+## Setup & Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Configure Environment Variables
+Create a file named `.env` in the root directory of the project and add the following line:
 
-## React Compiler
+```env
+VITE_API_URL=http://localhost:5000/api
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Install Dependencies
+Run the package manager command to install required modules:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Start the Development Server
+Launch the frontend application locally:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`. Make sure your backend server is running on port `5000`.

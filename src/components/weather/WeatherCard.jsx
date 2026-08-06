@@ -46,7 +46,7 @@ export default function WeatherCard({ data, isFavorite, onToggleFavorite, saving
           >
             <Heart
               size={22}
-              className={isFavorite ? "fill-amber text-amber" : "text-ink-muted"}
+              className={isFavorite ? "text-red-500 fill-red-500" : "text-ink-muted"}
             />
           </button>
         </div>
